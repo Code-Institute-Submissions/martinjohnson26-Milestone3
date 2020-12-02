@@ -1,45 +1,243 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<h1 align = "center">Milestone 2 Project<h1>
 
-Welcome USER_NAME,
+## Interactive Frontend Development by Martin Johnson
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+On The Road With The Cobblers is an interactive front end website designed and built by Martin Johnson using knowledge
+learnt on the Code Institute Full Stack Developers Course Modules 1- 7 which include HTML, CSS and JavaScript.
 
-## Gitpod Reminders
+It is a fully responsive site designed to meet the users requirements first.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The purpose of the site is to provide football supporters with fixture details, club information and travel directions. This 
+site is primarily focused for supporters of Northampton Town FC, however the fundamental design and content can be adapted 
+for clubs and other sports.
 
-`python3 -m http.server`
+![mock ups on various devices.](assets/readme_docs/mockup.png)
 
-A blue button should appear to click: *Make Public*,
+[View the live project here.](https://martinjohnson26.github.io/Milestone2-Project/)
 
-Another blue button should appear to click: *Open Browser*.
+## User Experience (UX)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a regular follower of Northampton Town FC, I was inspired to create an interactive website for fellow supporters 
+that is easy to use , provided fixture detail information, locations of the grounds they may want to visit and directions
+to those grounds. The site should also be mobile friendly as predicted usage is likely to be on match days when the user
+ does not have easy access to a laptop.
 
-A blue button should appear to click: *Make Public*,
+ - As a user, I want to be able to find sporting jargons and what they mean
+ - As a user, i want to add my sporting jargons and descriptions
+ - As a user, I want to edit my sporting jargons and descriptions
+ - As a user, I want to be able to serarch for a specific sporting jargon
+ - As a user, I want to be able to check for the latest additions added to the website
+ - As a user, I want to be able to contact the site owner and ask for more information
+ 
 
-Another blue button should appear to click: *Open Browser*.
+ - As site owner, I want to build a database of sporting jargons and descriptions
+ - As site owner, I want to site users to register with the site and add there own sporting jargons and descriptions
+ - As site owner, I want to have full control of the content of the database
+ - As site owner, I want to have users to be able to contact me with suggestions and questions about the site
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ ## Wireframes
 
-## Updates Since The Instructional Video
+ Based on user requirements, I used [Balsamiq](https://balsamiq.com/) to create basic site layout templates for desktop,
+ tablet and mobile devices. The design consists of 4 sections, a home page, a fixtures section, a map section and a 
+ contact section. I decided to use a JQuery toggle function to show and hide the fixtures as selected by the user. A gallery 
+ page was consider but deemed not relevant at the design inception and with this in mind a single page website was
+ decided upon.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+ Initial Home page design layouts are displayed below. [Full wireframes can be viewed here](assets/readme_docs/wireframes/wireframes.pdf)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+ ![Homepage wireframes](assets/readme_docs/wireframes/screens.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  ### Strategy
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+To create a simple and attractive site for supporters of Northampton Town FC
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  ### Scope
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+To provide fixtures and stadium details and travel directions for supporters. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ ### Structure
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The site is structured to ensure that all elements of the site are easily accessible via a navigation bar and is laid
+out in clearly defined sections for the user
 
---------
+ ### Skelton
 
-Happy coding!
+The initial design layout was created using [Balsamiq](https://balsamiq.com/). The designs are shown above in the
+Wireframes section
+
+### Surface
+
+A team image with an opacity added to enable the text to be more visible is the landing page.
+    
+ ## Design and Website Features
+
+-   ### Initial Design
+
+    The initial design was created in Balsamiq. A single page site was chosen containing four sections
+
+-   ### Colour scheme
+
+    Claret and White have been used as the prominent colours for fonts and backgrounds on navbars and footers as they
+    represent the club colours. A pale yellow has been used for hover effects again representing the clubs second choice
+    colours. A light grey background was used to enhance the overall feel to the site.
+
+    * Fonts,NavBar and footer backgrounds:  #b42424
+    * Fixture Section Fonts: #000000
+    * Hover effects: #E1F85E
+    * Body: #eaeae1
+
+-   ### Typography
+
+    Ubuntu was the chosen font for its clear and easily readable text and strong characters when used with a bold font.
+    Sans Serif has been selected as the fall back text should the main font fail to import correctly for any reason.
+
+-   ### Images
+
+    An image of the team celebrating their promotion success at Wembley has been chosen for the landing page, with a opacity
+    added to enable the text to be more visible.
+
+-   ### Site Features
+
+    * Navigation: Permits the user to navigate to all sections of the site in a simply manner and return to the Home page
+    from anywhere on the page by selecting the Home menu or by selecting the NavBar brand name or logo.
+
+    * Fixtures Section: Opponents are listed alphabetically in sequence. Each club has a 'Show Fixtures' button which when
+     selected reveals fixture dates , kick off times and stadiums. The background for each club is based on the clubs
+     traditional colours. The fixtures can be hidden after viewing by clicking on the 'Hide Fixtures" button.
+
+    * Google Maps API: Using a Google Map API the Twenty Four teams in the league have been coded to display a location
+     marker. Users can scroll in and out of the map and select a marker. The marker will display an info window displaying
+     an image of the stadium. Within the info window are two links. One links to the clubs official website and the other
+     open a google maps directions window.
+
+    * Contact Form: A simple contact form is used to enable the user to contact the site owner via e-mail.
+
+    * Social Media: Links to usual social media sites are included in the footer section.
+
+    ### Future Implementations
+
+    * Add a search bar to the Map to enable users to search for specific needs in the vicinity of the stadiums (bars, food
+     outlets etc).
+    * Add a new section, possibly a blog page, that would allow users to add reviews and comments about their visit to
+     the stadiums.
+
+##  Technologies used
+
+* [HTML](https://html.com/) - For the basic site code.
+* [CSS](https://www.w3schools.com/css/) - For Styling.
+* [Bootstrap](https://getbootstrap.com/) - For additional styling, responsiveness and layouts.
+* [Google Maps API](https://developers.google.com/maps/documentation) - For the Google Map.
+* [EmailJS](https://www.emailjs.com/) - For the contact form.
+* [JavaScript](https://www.javascript.com/) - For the coding relating to the map and fixtures sections.
+* [JavaQuery](https://jquery.com/) -  For the coding relating to the map and fixtures sections.
+* [GitHub](https://github.com/) -  For version control and committing to GitHub.
+* [GitPod](https://www.gitpod.io/) - For the repository to store the pushed code.
+* [FontAwesome](https://fontawesome.com) -  For icon images.
+* [Google Fonts](https://fonts.google.com) - For the fonts.
+
+
+## Tools Used
+
+* [Balsamiq](https://balsamiq.com/) - Used to create the wireframes on varying screen sizes.
+* [W3C HTML Validator](https://validator.w3.org/) - Check the validity of HTML code.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Check the validity of CSS code.
+* [Autoprefixed](https://autoprefixer.github.io/) - Check the prefixes of CSS code.
+* [BeautifyTools](http://beautifytools.com/javascript-validator.php)- Check the validity of JavaScript code.
+
+## Testing
+
+W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
+
+* [W3C HTML Validator -  Results](assets/readme_docs/htmlValidate.png.pdf)
+
+* [W3C CSS Validator * Results](assets/readme_docs/cssValidate.png)
+
+### User story testing -  All test were manually conducted
+
+ 1. As a user, I want to be able to see fixtures dates and kick off times
+
+    Users are presented an easily readable navigation bar which directs them to the section containing fixture details.
+    Users are presented with a clear layout of teams with a button which they can click on to reveal fixture information.
+    All functions in this section have been tested and full testing details are available in the test log 
+    
+ 2. As a user, i want to see details of the stadiums that I am going to and details about the other teams in my league.
+    
+    Users are presented an easily readable navigation bar which directs them to the section containing stadium information.
+    They are prompted to click on markers to reveal further information via an info window. All functions in this section
+     have been tested and full testing details are available in the test log.
+
+ 3.  As a user, I want to be able to get directions to the stadiums.
+
+     Each info window contains a directions link to the stadium. All functions in this section have been tested and full
+     testing details are available in the test log.
+
+ 4. As a user, I want to be able to contact the site owner and ask for more information.
+
+    Users are presented an easily readable navigation bar which directs them to the section containing the contact form.
+    There is a simple contact form which prompts the user to complete the fields correctly. All functions in this section
+    have been tested and full testing details are available in the test log.
+
+    [The full test log can be viewed here](assets/readme_docs/testlog.pdf)
+
+## Deployment
+
+### GitHub Pages
+
+To deploy my site I used GitHub and the following steps:
+
+1. Logged into my GitHub account.
+1. Went to my repositories and selected my project.
+1. Clicked the Settings icon.
+1. Scrolled down the page to the 'GitHub Pages' section
+1. I selected 'Master branch' in the dropdown
+1. This deployed my project to the URL: https://martinjohnson26.github.io/Milestone2-Project/
+
+### Forking the repository
+
+1.  Log in to GitHub and locate the GitHub Repository
+1.  At the top of the Repository above the "Settings" Button on the menu, locate the "Fork" Button.
+1.  Click the button to create a copy of the original repository in your GitHub account.
+
+### Make a local clone
+
+1. Log in to GitHub and locate the GitHub Repository
+1. Under the repository name, click "Clone or download".
+1. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+1. Open Git Bash
+1. Change the current working directory to the location where you want the cloned directory to be made.
+1. Type git clone, and then paste the URL you copied in Step 3.
+1. Press Enter. Your local clone will be created.
+
+## Credits
+
+**Content:** 
+The core HTML, CSS and JS code has been written by myself. Templates taken from [Bootstrapbay](https://bootstrapbay.com/blog/14-days-bootstrap-4/)
+were used for the NavBar and fixtures section and modified by myself to meet the needs of the site. The email.JS code was taken from the 
+Code Institute Interactive Frontend Development module lessons. The core code for the Google Maps API was taken from following
+a YouTube video by [Traversy Media](https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=1445s) and modifying to meet site requirements.
+Bootstrap 4 was used to assist with site responsivness and layout
+
+**Media**  
+ Icons were sourced from FontAwesome  (https://fontawesome.com)
+
+ Images were sourced from Wikipediae (https://en.wikipedia.org)
+
+ Fonts were sourced from Google Fonts (https://fonts.google.com/)
+
+**Acknowledgements**
+
+https://www.w3schools.com/bootstrap4/ For use of built in class definitions, examples and Try Me Code snippets
+
+Slack community for support and advice during the construction of the site
+
+Code Institute tutors for support and advice during the construction of the site
+
+Code Institute coursework for reference
+
+Traversy Media for YouTube videos related to Google Maps API's
+
+Codecademy for additional tutorials relating to JavaScript
+
+Oluwafemi Medale (CI Mentor) for help, support, advice and positive feedback from the initial inception of the site through to completion
+
+
