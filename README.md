@@ -17,10 +17,10 @@ for clubs and other sports.
 
 ## User Experience (UX)
 
-As a regular follower of Northampton Town FC, I was inspired to create an interactive website for fellow supporters 
+<!-- As a regular follower of Northampton Town FC, I was inspired to create an interactive website for fellow supporters 
 that is easy to use , provided fixture detail information, locations of the grounds they may want to visit and directions
 to those grounds. The site should also be mobile friendly as predicted usage is likely to be on match days when the user
- does not have easy access to a laptop.
+ does not have easy access to a laptop. -->
 
  - As a user, I want to be able to find sporting jargons and what they mean
  - As a user, i want to add my sporting jargons and descriptions
