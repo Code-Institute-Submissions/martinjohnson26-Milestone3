@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sporting Jargons</title>
-</head>
-<body>
+{% extends "base.html"%}
+{% block content %}
+
+    <h2>I am extending the base template</h2>
     {% for jargon in jargons %}
         {{ jargon.sport }}<br>
-        {{ jargon.jargon }}<br>
+        {{ jargon.jargon_name }}<br>
         {{ jargon.jargon_description }}<br>
         {{ jargon.created_by }}<br>
         {{ jargon.creation_date }}<br>
+        <br>
     {% endfor %}
-    
-</body>
-</html>
+
+{% endblock %}
