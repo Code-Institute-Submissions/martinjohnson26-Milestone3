@@ -4,26 +4,20 @@
 
     <div>
         <ul class="collapsible">
+            {% for jargon in jargons %}
             <li>
-                <div class="collapsible-header"><i class="fas fa-caret-down"></i>Football</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="fas fa-caret-down"></i>Cricket</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="fas fa-caret-down"></i>Golf</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="fas fa-caret-down"></i>Rugby</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="fas fa-caret-down"></i>Horse Racing</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
+            <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ jargon.sport }}</strong>
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ jargon.jargon_name }}</strong>
+                <p>{{ jargon.jargon_description }}</p>
+                <p>{{ jargon.created_by }}</p>
+                <p>{{ jargon.creation_date }}</p>
+            </div>
+        </li>
+            {% endfor %}
         </ul>
     </div>
 {% endblock %}

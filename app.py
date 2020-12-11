@@ -24,10 +24,10 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/")
+@app.route("/jargons")
 @app.route("/get_jargons")
 def get_jargons():
-    jargons = mongo.db.jargons.find()
+    jargons = list(mongo.db.jargons.find())
     return render_template("jargons.html", jargons=jargons)
 
 
