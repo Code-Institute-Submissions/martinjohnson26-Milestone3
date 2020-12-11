@@ -105,23 +105,11 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_jargon", methods=["GET", "POST"])
+@app.route("/add_jargon")
 def add_jargon():
-    if request.method == "POST":
-        jargon = {
-            "sport": request.form.get("sport_name"),
-            "jargon_name": request.form.get("jargon_name"),
-            "jargon_description": request.form.get("jargon_description"),
-            "creation_date": request.form.get("creation_date"),
-            "created_by": session["user"]
-        }
-        mongo.db.jargons.insert_one(jargon)
-        flash("Jargon Successfully Added")
-        return redirect(url_for("get_jargons"))
-
-    sports = mongo.db.sports.find().sort("sport", 1)
+    sports = mongo.db.sports.find().sort("sport_name", 1)
     return render_template("add_jargon.html", sports=sports)
-
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
