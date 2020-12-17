@@ -6,9 +6,13 @@
         <ul class="collapsible popout">
             <li>
                 <div class="collapsible-header center bold">A-E</div>
-                {% for term in A_F %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">:
-                        {{term.definition}}</span></div>
+                {% for runs in A_E %}
+                <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
+                        {{runs.runner_name}}</span></div>
+                <div>{{runs.run_date}}</div>
+                <div>{{runs.run_time}}</div>
+                <div>{{runs.course_pb}}</div>
+                <div>{{runs.distance_pb}}</div>
                 {% endfor %}
             </li>
         </ul>

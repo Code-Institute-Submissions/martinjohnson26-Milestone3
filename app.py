@@ -26,11 +26,11 @@ def home():
 
 @app.route("/get_jargons")
 def get_jargons():
-    a_e = mongo.db.park_run_index.find({"run_index": "A-E"})
-    f_j = mongo.db.park_run_index.find({"run_index": "F-J"})
-    k_o = mongo.db.park_run_index.find({"run_index": "K-O"})
-    p_t = mongo.db.park_run_index.find({"run_index": "P-T"})
-    u_z = mongo.db.park_run_index.find({"run_index": "U-Z"})
+    a_e = mongo.db.run_history.find({"run_index": "A-E"})
+    f_j = mongo.db.run_history.find({"run_index": "F-J"})
+    k_o = mongo.db.run_history.find({"run_index": "K-O"})
+    p_t = mongo.db.run_history.find({"run_index": "P-T"})
+    u_z = mongo.db.run_history.find({"run_index": "U-Z"})
     return render_template('jargons.html', A_E=a_e, G_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
     
 
