@@ -24,12 +24,15 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/jargons")
 @app.route("/get_jargons")
 def get_jargons():
-    jargons = list(mongo.db.jargons.find())
-    return render_template("jargons.html", jargons=jargons)
-
+    a_e = mongo.db.park_run_index.find({"run_index": "A-E"})
+    f_j = mongo.db.park_run_index.find({"run_index": "F-J"})
+    k_o = mongo.db.park_run_index.find({"run_index": "K-O"})
+    p_t = mongo.db.park_run_index.find({"run_index": "P-T"})
+    u_z = mongo.db.park_run_index.find({"run_index": "U-Z"})
+    return render_template('jargons.html', A_E=a_e, G_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
+    
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
