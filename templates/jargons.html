@@ -8,11 +8,12 @@
                 <div class="collapsible-header center bold">A-E</div>
                 {% for runs in A_E %}
                 <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
-                        {{runs.runner_name}}</span></div>
-                <div>{{runs.run_date}}</div>
-                <div>{{runs.run_time}}</div>
-                <div>{{runs.course_pb}}</div>
-                <div>{{runs.distance_pb}}</div>
+                        {{runs.runner_name}}</span>
+                    <div>{{runs.run_date}}</div>
+                    <div>{{runs.run_time}}</div>
+                    <div>{{runs.course_pb}}</div>
+                    <div>{{runs.distance_pb}}</div>
+                </div>
                 {% endfor %}
             </li>
         </ul>
@@ -20,9 +21,14 @@
         <ul class="collapsible popout">
             <li>
                 <div class="collapsible-header center bold">F-J</div>
-                {% for term in G_L %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">:
-                        {{term.definition}}</span></div>
+                {% for runs in F_J %}
+                <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
+                        {{runs.runner_name}}</span>
+                    <div>{{runs.run_date}}</div>
+                    <div>{{runs.run_time}}</div>
+                    <div>{{runs.course_pb}}</div>
+                    <div>{{runs.distance_pb}}</div>
+                </div>
                 {% endfor %}
             </li>
         </ul>
@@ -30,9 +36,14 @@
         <ul class="collapsible popout">
             <li>
                 <div class="collapsible-header center bold">K-O</div>
-                {% for term in M_R %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">:
-                        {{term.definition}}</span></div>
+                {% for runs in K_O %}
+                <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
+                        {{runs.runner_name}}</span>
+                    <div>{{runs.run_date}}</div>
+                    <div>{{runs.run_time}}</div>
+                    <div>{{runs.course_pb}}</div>
+                    <div>{{runs.distance_pb}}</div>
+                </div>
                 {% endfor %}
             </li>
         </ul>
@@ -40,9 +51,14 @@
         <ul class="collapsible popout">
             <li>
                 <div class="collapsible-header center bold">P-T</div>
-                {% for term in S_Z %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">:
-                        {{term.definition}}</span></div>
+                {% for runs in P_T %}
+                <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
+                        {{runs.runner_name}}</span>
+                    <div>{{runs.run_date}}</div>
+                    <div>{{runs.run_time}}</div>
+                    <div>{{runs.course_pb}}</div>
+                    <div>{{runs.distance_pb}}</div>
+                </div>
                 {% endfor %}
             </li>
         </ul>
@@ -50,9 +66,14 @@
         <ul class="collapsible popout">
             <li>
                 <div class="collapsible-header center bold">U-Z</div>
-                {% for term in A_F %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">:
-                        {{term.definition}}</span></div>
+                {% for runs in U_Z %}
+                <div class="collapsible-body"><span class="bold">{{runs.course_name}}</span><span class="font">:
+                        {{runs.runner_name}}</span>
+                    <div>{{runs.run_date}}</div>
+                    <div>{{runs.run_time}}</div>
+                    <div>{{runs.course_pb}}</div>
+                    <div>{{runs.distance_pb}}</div>
+                </div>
                 {% endfor %}
             </li>
         </ul>
