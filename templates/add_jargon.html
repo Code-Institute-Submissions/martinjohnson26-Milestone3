@@ -9,13 +9,13 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <select id="sport_name" name="sport_name" class="validate" required>
-                    <option value="" disabled selected>Select Sport</option>                   
-                    {% for sport in sports %} 
-                        <option value="{{ sport.sport_name }}">{{ sport.sport_name }}</option>
+                <select id="run_index" name="run_index" class="validate" required>
+                    <option value="" disabled selected>Select Course Index</option>                   
+                    {% for index in park_run_index %} 
+                        <option value="{{ index.run_index }}">{{ index.run_index  }}</option>
                     {% endfor %}
                 </select>
-                <label for="sport_name">Sport Category</label>
+                <label for="run_index">Park Run Index</label>
             </div>
         </div>
         <!-- jargon name  -->

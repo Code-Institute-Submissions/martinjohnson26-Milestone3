@@ -112,7 +112,7 @@ def logout():
 def add_jargon():
     if request.method == "POST":
         jargon = {
-            "sport": request.form.get("sport_name"),
+            "run_index": request.form.get("run_index"),
             "jargon_name": request.form.get("jargon_name"),
             "jargon_description": request.form.get("jargon_description"),
             "created_by": session["user"],
@@ -122,8 +122,8 @@ def add_jargon():
         flash("Jargon Successfully Added")
         return redirect(url_for("get_jargons"))
 
-    sports = mongo.db.sports.find().sort("sport_name", 1)
-    return render_template("add_jargon.html", sports=sports)
+    park_run_index = mongo.db.park_run_index.find().sort("run_index", 1)
+    return render_template("add_jargon.html", park_run_index=park_run_index)
     
 
 if __name__ == "__main__":
