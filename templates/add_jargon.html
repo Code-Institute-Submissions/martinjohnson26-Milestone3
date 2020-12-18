@@ -5,7 +5,7 @@
 
  <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('add_jargon') }}">
-    <!-- sport selection -->
+    <!-- A-Z options selection -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
@@ -18,32 +18,51 @@
                 <label for="run_index">Park Run Index</label>
             </div>
         </div>
-        <!-- jargon name  -->
+        <!-- course name  -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="jargon_name" name="jargon_name" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="course name" name="course name" minlength="5" maxlength="50" type="text" class="validate"
                     required>
-                <label for="jargon_name">Jargon Name</label>
+                <label for="course name">Course Location</label>
             </div>
         </div>
-        <!-- jargon description -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="jargon_description" name="jargon_description" minlength="5" maxlength="200"
-                 class="materialize-textarea validate" required></textarea>
-                <label for="jargon_description">Jargon Description</label>
-            </div>
-        </div>
-        <!-- creation date -->
+        
+        <!-- run date -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="creation_date" name="creation_date"  type="text" class=" datepicker validate"
+                <input id="run_date" name="run_date"  type="text" class=" datepicker validate"
                     required>
-                <label for="creation_date">Creation Date</label>
+                <label for="run_date">run Date</label>
             </div>   
+        </div>
+        <!-- run time -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <input id="run_time" name="run_time"  type="text" class="validate"
+                    required>
+                <label for="run_time">Run Time</label>
+            </div>   
+        </div>
+        <!-- course pb option -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="course_pb" name="course_pb" minlength="5" maxlength="200"
+                 class="materialize-textarea validate" required></textarea>
+                <label for="course_pb">Course PB Achieved ?</label>
+            </div>
+        </div>
+        <!-- distance pb option -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="distance_pb" name="distance_pb" minlength="5" maxlength="200"
+                 class="materialize-textarea validate" required></textarea>
+                <label for="distance_pb">Course PB Achieved ?</label>
+            </div>
         </div>
         <!-- submit button   -->
         <div class="row">

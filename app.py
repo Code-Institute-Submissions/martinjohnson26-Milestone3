@@ -113,12 +113,14 @@ def add_jargon():
     if request.method == "POST":
         jargon = {
             "run_index": request.form.get("run_index"),
-            "jargon_name": request.form.get("jargon_name"),
-            "jargon_description": request.form.get("jargon_description"),
-            "created_by": session["user"],
-            "creation_date": request.form.get("creation_date")
+            "course_name": request.form.get("course name"),
+            "runner_name": session["user"],
+            "run_date": request.form.get("run_date"),
+            "run_time": request.form.get("run_time"),
+            "course_pb": request.form.get("course_pb"),
+            "distance_pb": request.form.get("distance_pb")
         }
-        mongo.db.jargons.insert_one(jargon)
+        mongo.db.run_history.insert_one(jargon)
         flash("Jargon Successfully Added")
         return redirect(url_for("get_jargons"))
 
