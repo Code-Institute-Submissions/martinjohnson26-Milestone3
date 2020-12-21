@@ -9,61 +9,52 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                <select id="run_index" name="run_index" class="validate" required>
-                    <option value="" disabled selected>Select Course Index</option>                   
-                    {% for index in park_run_index %} 
-                        <option value="{{ index.run_index }}">{{ index.run_index  }}</option>
+                <select id="jargon_index" name="jargon_index" class="validate" required>
+                    <option value="" disabled selected>Select Jargon Index</option>                   
+                    {% for index in jargons_index %} 
+                        <option value="{{ index.jargon_index }}">{{ index.jargon_index  }}</option>
                     {% endfor %}
                 </select>
-                <label for="run_index">Park Run Index</label>
+                <label for="jargon_index">Jargon Index</label>
             </div>
         </div>
-        <!-- course name  -->
+        <!-- sport name  -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="course name" name="course name" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="sport" name="sport" minlength="5" maxlength="50" type="text" class="validate"
                     required>
-                <label for="course name">Course Location</label>
+                <label for="sport">Sport</label>
             </div>
+        </div>
+        <!-- jargon name  -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="jargon_name" name="jargon_name" minlength="5" maxlength="50" type="text" class="validate"
+                    required>
+                <label for="jargon_name">Jargon Name</label>
+            </div>
+        </div>
+        <!-- jargon description  -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="jargon_description" name="jargon_description" minlength="5" maxlength="50" type="text" class="validate"
+                    required>
+                <label for="jargon_description">Jargon description</label>
+            </div>
+        </div>
+        <!-- creation date -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <input id="creation_date" name="creation_date"  type="text" class=" datepicker validate"
+                    required>
+                <label for="creation_date">Creation Date</label>
+            </div>   
         </div>
         
-        <!-- run date -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="run_date" name="run_date"  type="text" class=" datepicker validate"
-                    required>
-                <label for="run_date">run Date</label>
-            </div>   
-        </div>
-        <!-- run time -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="run_time" name="run_time"  type="text" class="validate"
-                    required>
-                <label for="run_time">Run Time</label>
-            </div>   
-        </div>
-        <!-- course pb option -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="course_pb" name="course_pb" minlength="5" maxlength="200"
-                 class="materialize-textarea validate" required></textarea>
-                <label for="course_pb">Course PB Achieved ?</label>
-            </div>
-        </div>
-        <!-- distance pb option -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                <textarea id="distance_pb" name="distance_pb" minlength="5" maxlength="200"
-                 class="materialize-textarea validate" required></textarea>
-                <label for="distance_pb">Course PB Achieved ?</label>
-            </div>
-        </div>
         <!-- submit button   -->
         <div class="row">
             <div class="col s12 center-align">

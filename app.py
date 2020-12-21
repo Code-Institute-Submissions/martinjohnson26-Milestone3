@@ -26,11 +26,11 @@ def home():
 
 @app.route("/get_jargons")
 def get_jargons():
-    a_e = mongo.db.run_history.find({"run_index": "A-E"})
-    f_j = mongo.db.run_history.find({"run_index": "F-J"})
-    k_o = mongo.db.run_history.find({"run_index": "K-O"})
-    p_t = mongo.db.run_history.find({"run_index": "P-T"})
-    u_z = mongo.db.run_history.find({"run_index": "U-Z"})
+    a_e = mongo.db.jargons.find({"jargon_index": "A-E"})
+    f_j = mongo.db.jargons.find({"jargon_index": "F-J"})
+    k_o = mongo.db.jargons.find({"jargon_index": "K-O"})
+    p_t = mongo.db.jargons.find({"jargon_index": "P-T"})
+    u_z = mongo.db.jargons.find({"jargon_index": "U-Z"})
     return render_template('jargons.html', A_E=a_e, G_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
     
 
@@ -112,20 +112,19 @@ def logout():
 def add_jargon():
     if request.method == "POST":
         jargon = {
-            "run_index": request.form.get("run_index"),
-            "course_name": request.form.get("course name"),
-            "runner_name": session["user"],
-            "run_date": request.form.get("run_date"),
-            "run_time": request.form.get("run_time"),
-            "course_pb": request.form.get("course_pb"),
-            "distance_pb": request.form.get("distance_pb")
+            "jargon_index": request.form.get("jargon_index"),
+            "sport": request.form.get("sport"),
+            "jargon_name": request.form.get("jargon_name"),
+            "jargon_description": request.form.get("jargon_description"),
+            "created_by": session["user"],
+            "creation_date": request.form.get("creation_date")
         }
-        mongo.db.run_history.insert_one(jargon)
+        mongo.db.jargons.insert_one(jargon)
         flash("Jargon Successfully Added")
         return redirect(url_for("get_jargons"))
 
-    park_run_index = mongo.db.park_run_index.find().sort("run_index", 1)
-    return render_template("add_jargon.html", park_run_index=park_run_index)
+    jargons_index = mongo.db.jargons_index.find().sort("jargon_index", 1)
+    return render_template("add_jargon.html", jargons_index=jargons_index)
     
 
 if __name__ == "__main__":
