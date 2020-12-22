@@ -29,3 +29,7 @@
 .flashes h4{
     line-height:2;
 }
+.center-text{
+    justify-content: center;
+    font-weight: 600;
+}
