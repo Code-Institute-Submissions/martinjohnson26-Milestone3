@@ -128,6 +128,14 @@ def add_jargon():
     return render_template("add_jargon.html", jargons_index=jargons_index)
 
 
+@app.route("/edit_jargon/<jargon_edit>", methods=["GET", "POST"])
+def edit_jargon(jargon_edit):
+    jargon = mongo.db.jargons.find_one({"_id": ObjectId(jargon_edit)})
+
+    jargons_index = mongo.db.jargons_index.find().sort("jargon_index", 1)
+    return render_template(
+        "edit_jargon.html", jargon=jargon, jargons_index=jargons_index)
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

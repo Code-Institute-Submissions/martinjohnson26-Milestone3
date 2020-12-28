@@ -5,13 +5,14 @@
     <div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">A-E</div>
+                <div class="collapsible-header center-text">A-E
+                    <i class="fas fa-caret-down"></i>
+                </div>
                 {% for index_jargon in A_E %}
                 <div class="collapsible-body">
                     <div class="col s3">
-                        <i class="fas fa-caret-down"></i>
                         <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="{{ url_for('edit_jargon', jargon_edit=jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -28,13 +29,15 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">F-J</div>
+                <div class="collapsible-header center-text">F-J
+                    <i class="fas fa-caret-down"></i>
+                </div>
                 {% for index_jargon in F_J %}
                  <div class="collapsible-body">
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
                         <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="{{ url_for('edit_jargon', jargon_edit=jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -51,13 +54,15 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">K-O</div>
+                <div class="collapsible-header center-text">K-O
+                    <i class="fas fa-caret-down"></i>
+                </div>
                 {% for index_jargon in K_O %}
                  <div class="collapsible-body">
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
                         <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="{{ url_for('edit_jargon', jargon_edit=jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -74,13 +79,15 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">P-T</div>
+                <div class="collapsible-header center-text">P-T
+                    <i class="fas fa-caret-down"></i>
+                </div>
                 {% for index_jargon in P_T %}
                  <div class="collapsible-body">
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
                         <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="{{ url_for('edit_jargon', jargon_edit=jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -97,13 +104,15 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">U-Z</div>
+                <div class="collapsible-header center-text">U-Z
+                    <i class="fas fa-caret-down"></i>
+                </div>
                 {% for index_jargon in U_Z %}
                  <div class="collapsible-body">
                     <div class="col s3">
                         <i class="fas fa-caret-down"></i>
                         <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="{{ url_for('edit_jargon', jargon_edit=jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
