@@ -24,7 +24,6 @@
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
                         <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
-                        <li><a href="">Manage Jargons</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -42,7 +41,6 @@
                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
                         <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
-                        <li><a href="">Manage Jargons</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>

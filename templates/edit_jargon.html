@@ -12,7 +12,7 @@
                 <select id="jargon_index" name="jargon_index" class="validate" required>
                     <option value="" disabled selected>Select Jargon Index</option>                   
                     {% for index in jargons_index %} 
-                        <option value="{{ index.jargon_index }}">{{ index.jargon_index  }}</option>
+                        <option value="{{ jargon.jargon_index }}">{{ jargon.jargon_index  }}</option>
                     {% endfor %}
                 </select>
                 <label for="jargon_index">Jargon Index</label>
@@ -22,7 +22,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="sport" name="sport" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="sport" name="sport" minlength="5" maxlength="50" 
+                value={{jargon.sport}} type="text" class="validate"
                     required>
                 <label for="sport">Sport</label>
             </div>
@@ -31,7 +32,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="jargon_name" name="jargon_name" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="jargon_name" name="jargon_name" minlength="5" maxlength="50"
+                value={{jargon.jargon_name}} type="text" class="validate"
                     required>
                 <label for="jargon_name">Jargon Name</label>
             </div>
@@ -40,18 +42,19 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="jargon_description" name="jargon_description" minlength="5" maxlength="50" type="text" class="validate"
+                <input id="jargon_description" name="jargon_description" minlength="5" maxlength="50"
+                value={{jargon.jargon_description}}  type="text" class="validate"
                     required>
                 <label for="jargon_description">Jargon description</label>
             </div>
         </div>
-        <!-- creation date -->
+        <!-- Modify date -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="creation_date" name="creation_date"  type="text" class=" datepicker validate"
+                <input id="modify_date" name="modify_date"  type="text" class=" datepicker validate"
                     required>
-                <label for="creation_date">Creation Date</label>
+                <label for="modify_date">Modify Date</label>
             </div>   
         </div>
         
