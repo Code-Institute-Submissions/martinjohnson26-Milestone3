@@ -128,9 +128,9 @@ def add_jargon():
     return render_template("add_jargon.html", jargons_index=jargons_index)
 
 
-@app.route("/edit_jargon/<jargon_edit>", methods=["GET", "POST"])
-def edit_jargon(jargon_edit):
-    jargon = mongo.db.jargons.find_one({"_id": ObjectId(jargon_edit)})
+@app.route("/edit_jargon/<index>", methods=["GET", "POST"])
+def edit_jargon(index):
+    jargon = mongo.db.jargons.find_one({"_id": ObjectId(index)})
 
     jargons_index = mongo.db.jargons_index.find().sort("jargon_index", 1)
     return render_template(
