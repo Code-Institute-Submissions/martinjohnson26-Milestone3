@@ -32,7 +32,7 @@ def get_jargons():
     p_t = mongo.db.jargons.find({"jargon_index": "P-T"})
     u_z = mongo.db.jargons.find({"jargon_index": "U-Z"})
     return render_template(
-        'jargons.html', A_E=a_e, G_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
+        'jargons.html', A_E=a_e, F_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
 
 
 @app.route("/register", methods=["GET", "POST"])
