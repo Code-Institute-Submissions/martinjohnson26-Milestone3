@@ -10,9 +10,13 @@
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                 <select id="jargon_index" name="jargon_index" class="validate" required>
-                    <option value="" disabled selected>Select Jargon Index</option>                   
-                    {% for index in jargons_index %} 
-                        <option value="{{ jargon.jargon_index }}">{{ jargon.jargon_index  }}</option>
+                    <option value="" disabled>Select Jargon Index</option>
+                    {% for index in jargons_index %}
+                        {% if index.jargon_index == jargon.jargon_index %}
+                            <option value="{{ jargon.jargon_index }}" selected>{{ jargon.jargon_index  }}</option>
+                        {% else %}
+                            <option value="{{ index.jargon_index }}">{{ index.jargon_index  }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
                 <label for="jargon_index">Jargon Index</label>
