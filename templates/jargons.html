@@ -11,8 +11,11 @@
                 {% for index_jargon in A_E %}
                 <div class="collapsible-body">
                     <div class="col s3">
-                        <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                        {% if session.user|lower == index_jargon.created_by|lower %}
+                            <a class="waves-effect waves-light btn-small">Delete</a>
+                            <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" 
+                            class="waves-effect waves-light btn-small">Edit</a>
+                        {% endif %}
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -35,9 +38,11 @@
                 {% for index_jargon in F_J %}
                  <div class="collapsible-body">
                     <div class="col s3">
-                        <i class="fas fa-caret-down"></i>
-                        <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                        {% if session.user|lower == index_jargon.created_by|lower %}
+                            <a class="waves-effect waves-light btn-small">Delete</a>
+                            <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" 
+                            class="waves-effect waves-light btn-small">Edit</a>
+                        {% endif %}
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -60,9 +65,11 @@
                 {% for index_jargon in K_O %}
                  <div class="collapsible-body">
                     <div class="col s3">
-                        <i class="fas fa-caret-down"></i>
-                        <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                        {% if session.user|lower == index_jargon.created_by|lower %}
+                            <a class="waves-effect waves-light btn-small">Delete</a>
+                            <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" 
+                            class="waves-effect waves-light btn-small">Edit</a>
+                        {% endif %}
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -85,9 +92,11 @@
                 {% for index_jargon in P_T %}
                  <div class="collapsible-body">
                     <div class="col s3">
-                        <i class="fas fa-caret-down"></i>
-                        <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                        {% if session.user|lower == index_jargon.created_by|lower %}
+                            <a class="waves-effect waves-light btn-small">Delete</a>
+                            <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" 
+                            class="waves-effect waves-light btn-small">Edit</a>
+                        {% endif %}
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
@@ -110,9 +119,11 @@
                 {% for index_jargon in U_Z %}
                  <div class="collapsible-body">
                     <div class="col s3">
-                        <i class="fas fa-caret-down"></i>
-                        <a class="waves-effect waves-light btn-small">Delete</a>
-                        <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" class="waves-effect waves-light btn-small">Edit</a>
+                        {% if session.user|lower == index_jargon.created_by|lower %}
+                            <a class="waves-effect waves-light btn-small">Delete</a>
+                            <a href="{{ url_for('edit_jargon', index=index_jargon._id) }}" 
+                            class="waves-effect waves-light btn-small">Edit</a>
+                        {% endif %}
                     </div>
                     <div class="col s9">
                         <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>

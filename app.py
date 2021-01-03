@@ -130,6 +130,18 @@ def add_jargon():
 
 @app.route("/edit_jargon/<index>", methods=["GET", "POST"])
 def edit_jargon(index):
+    if request.method == "POST":
+        submit = {
+            "jargon_index": request.form.get("jargon_index"),
+            "sport": request.form.get("sport"),
+            "jargon_name": request.form.get("jargon_name"),
+            "jargon_description": request.form.get("jargon_description"),
+            "created_by": session["user"],
+            "creation_date": request.form.get("creation_date")
+        }
+        mongo.db.jargons.update({"_id": ObjectId(index)}, submit)
+        flash("Jargon Successfully Updated")
+       
     jargon = mongo.db.jargons.find_one({"_id": ObjectId(index)})
 
     jargons_index = mongo.db.jargons_index.find().sort("jargon_index", 1)
