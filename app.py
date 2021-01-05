@@ -35,6 +35,18 @@ def get_jargons():
         'jargons.html', A_E=a_e, F_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    a_e = mongo.db.jargons.find({"$text": {"$search": query}})
+    f_j = mongo.db.jargons.find({"$text": {"$search": query}})
+    k_o = mongo.db.jargons.find({"$text": {"$search": query}})
+    p_t = mongo.db.jargons.find({"$text": {"$search": query}})
+    u_z = mongo.db.jargons.find({"$text": {"$search": query}})
+    return render_template(
+        'jargons.html', A_E=a_e, F_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
