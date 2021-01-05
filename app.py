@@ -141,12 +141,20 @@ def edit_jargon(index):
         }
         mongo.db.jargons.update({"_id": ObjectId(index)}, submit)
         flash("Jargon Successfully Updated")
-       
+
     jargon = mongo.db.jargons.find_one({"_id": ObjectId(index)})
 
     jargons_index = mongo.db.jargons_index.find().sort("jargon_index", 1)
     return render_template(
         "edit_jargon.html", jargon=jargon, jargons_index=jargons_index)
+
+
+@app.route("/delete_jargon/<index>")
+def delete_jargon(index):
+    mongo.db.jargons.remove({"_id": ObjectId(index)})
+    flash("Jargon Successfully Deleted")
+    return redirect(url_for("get_jargons"))
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
