@@ -1,14 +1,14 @@
 {% extends "base.html"%}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">Add Jargon</h3>
+<h3 class="grey-text text-darken-4 center-align">Add Jargon</h3>
 
- <div class="row card-panel grey lighten-5">
+ <div class="row card-panel grey lighten-3">
     <form class="col s12" method="POST" action="{{ url_for('add_jargon') }}">
     <!-- A-Z options selection -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-folder-open prefix grey-text text-darken-4"></i>
                 <select id="jargon_index" name="jargon_index" class="validate" required>
                     <option value="" disabled selected>Select Jargon Index</option>                   
                     {% for index in jargons_index %} 
@@ -21,7 +21,7 @@
         <!-- sport name  -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-pencil-alt prefix grey-text text-darken-4"></i>
                 <input id="sport" name="sport" minlength="5" maxlength="50" type="text" class="validate"
                     required>
                 <label for="sport">Sport</label>
@@ -30,7 +30,7 @@
         <!-- jargon name  -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-pencil-alt prefix grey-text text-darken-4"></i>
                 <input id="jargon_name" name="jargon_name" minlength="5" maxlength="50" type="text" class="validate"
                     required>
                 <label for="jargon_name">Jargon Name</label>
@@ -39,7 +39,7 @@
         <!-- jargon description  -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-pencil-alt prefix grey-text text-darken-4"></i>
                 <textarea id="jargon_description" name="jargon_description" minlength="5" maxlength="200"
                 class="materialize-textarea validate"
                     required></textarea>
@@ -49,7 +49,7 @@
         <!-- creation date -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-calendar-alt prefix grey-text text-darken-4"></i>
                 <input id="creation_date" name="creation_date"  type="text" class=" datepicker validate"
                     required>
                 <label for="creation_date">Creation Date</label>
@@ -63,7 +63,7 @@
                     <a href="{{ url_for('get_jargons') }}" class="btn-large red text-shadow">
                         Cancel <i class="fas fa-times-circle right"></i>
                     </a>
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                <button type="submit" class="btn-large green darken-1 text-shadow">
                         Add Jargon <i class="fas fa-plus-square right"></i>
                     </button>
             </div>
