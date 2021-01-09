@@ -1,7 +1,7 @@
 {% extends "base.html"%}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">All Jargons</h3>
+<h3 class="light-blue-text text-darken-4 center-align">View Sporting Jargons</h3>
 
 <div class="row card-panel grey lighten-5">
     <form action="{{url_for('search')}}" method="post" class="col s12">
@@ -21,17 +21,17 @@
     <div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">A-E
+                <div class="collapsible-header center-text grey darken-2 white-text">Sports starting with A to E
                     <i class="fas fa-caret-down"></i>
                 </div>
                 {% for index_jargon in A_E %}
                 <div class="collapsible-body">
                     <div class="col s9">
-                        <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
-                        <div class="center-text caps">{{index_jargon.sport}}</div>
-                        <div>{{index_jargon.jargon_description}}</div>
-                        <div>{{index_jargon.created_by}}</div>
-                        <div>{{index_jargon.creation_date}}</div>
+                        <div class="row">
+                            <h5 class="col s12 m2 center-text indigo-text">{{index_jargon.sport}} -</h5>
+                            <h5 class="col s12 m10 red-text">Jargon : {{index_jargon.jargon_name}}</h5>
+                        </div>
+                        <h6>{{index_jargon.jargon_description}}</h6>
                     </div>    
                     <div class="col s3">
                         {% if session.user|lower == index_jargon.created_by|lower %}
@@ -41,7 +41,6 @@
                             class="waves-effect waves-light btn-small">Edit</a>
                         {% endif %}
                     </div>
-                    
                 </div>
                 {% endfor %}
             </li>
@@ -49,17 +48,17 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">F-J
+                <div class="collapsible-header center-text grey darken-2 white-text">Sports starting with F to J
                     <i class="fas fa-caret-down"></i>
                 </div>
                 {% for index_jargon in F_J %}
-                 <div class="collapsible-body">
+                <div class="collapsible-body">
                     <div class="col s9">
-                        <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
-                        <div class="center-text caps">{{index_jargon.sport}}</div>
-                        <div>{{index_jargon.jargon_description}}</div>
-                        <div>{{index_jargon.created_by}}</div>
-                        <div>{{index_jargon.creation_date}}</div>
+                        <div class="row">
+                            <h5 class="col s12 m2 center-text indigo-text">{{index_jargon.sport}} -</h5>
+                            <h5 class="col s12 m10 red-text">Jargon : {{index_jargon.jargon_name}}</h5>
+                        </div>
+                        <h6>{{index_jargon.jargon_description}}</h6>
                     </div>    
                     <div class="col s3">
                         {% if session.user|lower == index_jargon.created_by|lower %}
@@ -76,17 +75,17 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">K-O
+                <div class="collapsible-header center-text grey darken-2 white-text">Sports starting with K to O
                     <i class="fas fa-caret-down"></i>
                 </div>
                 {% for index_jargon in K_O %}
-                 <div class="collapsible-body">
+                <div class="collapsible-body">
                     <div class="col s9">
-                        <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
-                        <div class="center-text caps">{{index_jargon.sport}}</div>
-                        <div>{{index_jargon.jargon_description}}</div>
-                        <div>{{index_jargon.created_by}}</div>
-                        <div>{{index_jargon.creation_date}}</div>
+                        <div class="row">
+                            <h5 class="col s12 m2 center-text indigo-text">{{index_jargon.sport}} -</h5>
+                            <h5 class="col s12 m10 red-text">Jargon : {{index_jargon.jargon_name}}</h5>
+                        </div>
+                        <h6>{{index_jargon.jargon_description}}</h6>
                     </div>    
                     <div class="col s3">
                         {% if session.user|lower == index_jargon.created_by|lower %}
@@ -103,17 +102,17 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">P-T
+                <div class="collapsible-header center-text grey darken-2 white-text">Sports starting with P to T
                     <i class="fas fa-caret-down"></i>
                 </div>
                 {% for index_jargon in P_T %}
-                 <div class="collapsible-body">
+                <div class="collapsible-body">
                     <div class="col s9">
-                        <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
-                        <div class="center-text caps">{{index_jargon.sport}}</div>
-                        <div>{{index_jargon.jargon_description}}</div>
-                        <div>{{index_jargon.created_by}}</div>
-                        <div>{{index_jargon.creation_date}}</div>
+                        <div class="row">
+                            <h5 class="col s12 m2 center-text indigo-text">{{index_jargon.sport}} -</h5>
+                            <h5 class="col s12 m10 red-text">Jargon : {{index_jargon.jargon_name}}</h5>
+                        </div>
+                        <h6>{{index_jargon.jargon_description}}</h6>
                     </div>    
                     <div class="col s3">
                         {% if session.user|lower == index_jargon.created_by|lower %}
@@ -130,17 +129,17 @@
         <div class="block-divider"></div>
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center-text">U-Z
+                <div class="collapsible-header center-text grey darken-2 white-text">Sports starting with U to Z
                     <i class="fas fa-caret-down"></i>
                 </div>
                 {% for index_jargon in U_Z %}
-                 <div class="collapsible-body">
+                <div class="collapsible-body">
                     <div class="col s9">
-                        <h5 class="bold">Sporting Jargon :   {{index_jargon.jargon_name}}</h5>
-                        <div class="center-text caps">{{index_jargon.sport}}</div>
-                        <div>{{index_jargon.jargon_description}}</div>
-                        <div>{{index_jargon.created_by}}</div>
-                        <div>{{index_jargon.creation_date}}</div>
+                        <div class="row">
+                            <h5 class="col s12 m2 center-text indigo-text">{{index_jargon.sport}} -</h5>
+                            <h5 class="col s12 m10 red-text">Jargon : {{index_jargon.jargon_name}}</h5>
+                        </div>
+                        <h6>{{index_jargon.jargon_description}}</h6>
                     </div>    
                     <div class="col s3">
                         {% if session.user|lower == index_jargon.created_by|lower %}
