@@ -8,7 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-
+# Environment Variable Setup
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
@@ -18,14 +18,20 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Home page route
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template("home.html")
 
 
+# Display jargon categories and jargons route
 @app.route("/get_jargons")
 def get_jargons():
+    """
+    Displays the jargon index(Alphabetical categories) and the
+    jargons when the categories are clicked on
+    """
     a_e = mongo.db.jargons.find({"jargon_index": "A-E"})
     f_j = mongo.db.jargons.find({"jargon_index": "F-J"})
     k_o = mongo.db.jargons.find({"jargon_index": "K-O"})
@@ -47,8 +53,14 @@ def search():
         'jargons.html', A_E=a_e, F_J=f_j, K_O=k_o, P_T=p_t, U_Z=u_z)
 
 
+# Registration Form route
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Checks to see if username exists in users database,
+    adds new users to the users database
+    puts new user into a session
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -72,8 +84,14 @@ def register():
     return render_template("register.html")
 
 
+# Log in existing user form route
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+    Checks to see if username exists in database,
+    checks users password is valid,
+    redirects new users to registration page
+    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -83,10 +101,10 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
                             request.form.get("username")))
-                        return redirect(url_for(
+                return redirect(url_for(
                             "profile", username=session["user"]))
             else:
                 # invalid password match
@@ -101,8 +119,12 @@ def login():
     return render_template("login.html")
 
 
+# User Profile route
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+    displays the users profile page
+    """
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -113,16 +135,26 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# User log out route
 @app.route("/logout")
 def logout():
+    """
+    logs out current user.
+    clears session data
+    """
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
 
+# Add jargons route
 @app.route("/add_jargon", methods=["GET", "POST"])
 def add_jargon():
+    """
+    gets data from the add jargons forms and adds
+    to the jargons database
+    """
     if request.method == "POST":
         jargon = {
             "jargon_index": request.form.get("jargon_index"),
@@ -140,8 +172,13 @@ def add_jargon():
     return render_template("add_jargon.html", jargons_index=jargons_index)
 
 
+# Edit jargons route
 @app.route("/edit_jargon/<index>", methods=["GET", "POST"])
 def edit_jargon(index):
+    """
+    gets data from the edit jargons form and updates
+    the existing jargon in the jargons database
+    """
     if request.method == "POST":
         submit = {
             "jargon_index": request.form.get("jargon_index"),
@@ -161,8 +198,12 @@ def edit_jargon(index):
         "edit_jargon.html", jargon=jargon, jargons_index=jargons_index)
 
 
+# Delete jargons route
 @app.route("/delete_jargon/<index>")
 def delete_jargon(index):
+    """
+    deletes an existing jargon from the jargons database
+    """
     mongo.db.jargons.remove({"_id": ObjectId(index)})
     flash("Jargon Successfully Deleted")
     return redirect(url_for("get_jargons"))
