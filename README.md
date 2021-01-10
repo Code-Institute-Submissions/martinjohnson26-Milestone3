@@ -1,8 +1,8 @@
-<!-- <h1 align = "center">Milestone 3 Project<h1> -->
+ <h1 align = "center">Milestone 3 Project<h1> 
 
 ## Data Centric Development by Martin Johnson
 
-<!-- Sporting Jargons is a website designed and built by Martin Johnson using knowledge
+Sporting Jargons is a website designed and built by Martin Johnson using knowledge
 learnt on the Code Institute Full Stack Developers Course Modules 1- 10 which include HTML, CSS, JavaScript
 and Python
 
@@ -12,14 +12,14 @@ what these jargons mean. Site users will also have the option to add, edit and d
 
 ![mock ups on various devices.](assets/readme_docs/mockup.png)
 
-[View the live project here.](https://martinjohnson26.github.io/Milestone2-Project/) -->
+[View the live project here.](https://martinjohnson26.github.io/Milestone2-Project/) 
 
 ## User Experience (UX)
 
-<!-- As a keen sports fan i frequently encountered sayings and jargons that i did not understand the meaning of. This inspired me to create a
+As a keen sports fan i frequently encountered sayings and jargons that i did not understand the meaning of. This inspired me to create a
 website of these phrases for my personal reference and to invite other users to also add to the site in orderr to build up a glossary of
 sporting jargons.
- -->
+
 
  - As a user, I want to be able to find sporting jargons and what they mean
  - As a user, i want to add my sporting jargons and descriptions
@@ -33,15 +33,17 @@ sporting jargons.
  
  ## Wireframes
 
- <!-- Based on user requirements, I used [Balsamiq](https://balsamiq.com/) to create basic site layout templates for desktop,
+ Based on user requirements, I used [Balsamiq](https://balsamiq.com/) to create basic site layout templates for desktop,
  tablet and mobile devices. The design consists of 3 sections, a home page, a jargons section, and a 
  sports category section. I decided to use a JQuery toggle function to show and hide the fixtures as selected by the user. A gallery 
  page was consider but deemed not relevant at the design inception and with this in mind a single page website was
  decided upon.
 
- Initial Home page design layouts are displayed below. [Full wireframes can be viewed here](assets/readme_docs/wireframes/wireframes.pdf)
+ Initial Home page design layouts are displayed below. [Full wireframes can be viewed here](static/readme_docs/wireframes/wireframes.pdf)
 
- ![Homepage wireframes](assets/readme_docs/wireframes/screens.png) -->
+ ![Homepage wireframes](static/readme_docs/wireframes/screens.png) 
+
+ The final design is significantly different from the original design
 
   ### Strategy
 
