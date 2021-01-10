@@ -1,15 +1,14 @@
-<!-- <h1 align = "center">Milestone 2 Project<h1> -->
+<!-- <h1 align = "center">Milestone 3 Project<h1> -->
 
-## Interactive Frontend Development by Martin Johnson
+## Data Centric Development by Martin Johnson
 
-<!-- On The Road With The Cobblers is an interactive front end website designed and built by Martin Johnson using knowledge
-learnt on the Code Institute Full Stack Developers Course Modules 1- 7 which include HTML, CSS and JavaScript.
+<!-- Sporting Jargons is a website designed and built by Martin Johnson using knowledge
+learnt on the Code Institute Full Stack Developers Course Modules 1- 10 which include HTML, CSS, JavaScript
+and Python
 
-It is a fully responsive site designed to meet the users requirements first.
+The purpose of the site is to provide users with explanations for commonly used jargons from the sporting world and understand
+what these jargons mean. Site users will also have the option to add, edit and delete jargons that they have heard and used themselves.
 
-The purpose of the site is to provide football supporters with fixture details, club information and travel directions. This 
-site is primarily focused for supporters of Northampton Town FC, however the fundamental design and content can be adapted 
-for clubs and other sports.
 
 ![mock ups on various devices.](assets/readme_docs/mockup.png)
 
@@ -17,29 +16,26 @@ for clubs and other sports.
 
 ## User Experience (UX)
 
-<!-- As a regular follower of Northampton Town FC, I was inspired to create an interactive website for fellow supporters 
-that is easy to use , provided fixture detail information, locations of the grounds they may want to visit and directions
-to those grounds. The site should also be mobile friendly as predicted usage is likely to be on match days when the user
- does not have easy access to a laptop. -->
+<!-- As a keen sports fan i frequently encountered sayings and jargons that i did not understand the meaning of. This inspired me to create a
+website of these phrases for my personal reference and to invite other users to also add to the site in orderr to build up a glossary of
+sporting jargons.
+ -->
 
  - As a user, I want to be able to find sporting jargons and what they mean
  - As a user, i want to add my sporting jargons and descriptions
  - As a user, I want to edit my sporting jargons and descriptions
- - As a user, I want to be able to serarch for a specific sporting jargon
- - As a user, I want to be able to check for the latest additions added to the website
  - As a user, I want to be able to contact the site owner and ask for more information
  
 
  - As site owner, I want to build a database of sporting jargons and descriptions
  - As site owner, I want to site users to register with the site and add there own sporting jargons and descriptions
  - As site owner, I want to have full control of the content of the database
- - As site owner, I want to have users to be able to contact me with suggestions and questions about the site
-
+ 
  ## Wireframes
 
  <!-- Based on user requirements, I used [Balsamiq](https://balsamiq.com/) to create basic site layout templates for desktop,
- tablet and mobile devices. The design consists of 4 sections, a home page, a fixtures section, a map section and a 
- contact section. I decided to use a JQuery toggle function to show and hide the fixtures as selected by the user. A gallery 
+ tablet and mobile devices. The design consists of 3 sections, a home page, a jargons section, and a 
+ sports category section. I decided to use a JQuery toggle function to show and hide the fixtures as selected by the user. A gallery 
  page was consider but deemed not relevant at the design inception and with this in mind a single page website was
  decided upon.
 
