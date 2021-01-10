@@ -16,15 +16,15 @@
         <!-- Top NavBar -->
         <nav class="nav-extended text-shadow yellow darken-3">
 			<div class="nav-wrapper">
-				<a href="{{ url_for ('home')}}" class="brand-logo green-text text-darken 4">Know Your Sporting Jargons</a>
+				<a href="{{ url_for ('home')}}" class="brand-logo green-text text-darken 4">Sporting Jargons</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('home') }}">Home</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
-                        <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
+                    <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
+                    <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                    <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Log In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>
@@ -38,10 +38,10 @@
             <li><h4 class="center-align green-text text-darken 4">Know Your Sporting Jargons</h4></li>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
-               <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
-                        <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
+            <li><a href="{{ url_for('add_jargon')}}">Add New Jargon</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
