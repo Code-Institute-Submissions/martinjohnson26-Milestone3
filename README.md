@@ -43,7 +43,8 @@ sporting jargons.
 
  ![Homepage wireframes](static/readme_docs/wireframes/screens.png) 
 
- The final design is significantly different from the original design
+ The final design is significantly different from the original design.  The sporting category was replaced by an accordion style drop-down 
+ which used an alphabetical index rather than individual sports
 
   ### Strategy
 
