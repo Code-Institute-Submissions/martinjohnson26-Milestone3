@@ -18,6 +18,7 @@
 <body>
 
     <!-- Top NavBar -->
+<div class="navbar-fixed">
     <nav class="nav-extended text-shadow yellow darken-3">
         <div class="nav-wrapper">
             <a href="{{ url_for ('home')}}" class="brand-logo green-text text-darken 4">Sporting Jargons</a>
@@ -36,10 +37,11 @@
             </ul>
         </div>
     </nav>
+</div>
     <!-- Mobile NavBar -->
     <ul class="sidenav" id="mobile-demo">
         <li>
-            <h4 class="center-align green-text text-darken 4">Sporting Jargons</h4>
+        <a href="{{ url_for ('home')}}" class="brand-logo brand-logo-size green-text text-darken 4">Sporting Jargons</a>
         </li>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>
