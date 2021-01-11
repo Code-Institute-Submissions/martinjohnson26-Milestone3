@@ -48,21 +48,21 @@ sporting jargons.
 
   ### Strategy
 
-<!-- To create a simple and attractive site for supporters of Northampton Town FC -->
+To create a simple and basic site for users to view a glossary of sporting jargons
 
   ### Scope
 
-<!-- To provide fixtures and stadium details and travel directions for supporters.  -->
+To allow users to add , edit and delete their own jargons
 
  ### Structure
 
-<!-- The site is structured to ensure that all elements of the site are easily accessible via a navigation bar and is laid
-out in clearly defined sections for the user -->
+The site is structured to ensure that all elements of the site are easily accessible via a navigation bar. Users are required
+to log into the site to get add and edit access to the jargons
 
  ### Skelton
 
-<!-- The initial design layout was created using [Balsamiq](https://balsamiq.com/). The designs are shown above in the
-Wireframes section -->
+The initial design layout was created using [Balsamiq](https://balsamiq.com/). The designs are shown above in the
+Wireframes section
 
 ### Surface
 

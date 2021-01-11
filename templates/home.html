@@ -2,17 +2,27 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="home-image">
-        <div class="row opacity">
-            <div class="col s12 center-align">
-                <div class="caption text-center">
-                    <h1>KNOW YOUR SPORTING JARGONS</h1>
-                    <hr>
-                    <h3>Find and share your sporting jargons</h3>
-                </div>
-            </div>
+    <div class="col s12 center-align">
+        <div class="caption text-center">
+            <h2>SPORTING JARGONS</h2>
+            <hr>
+            <h4>Ever heard a sporting jargon and thought what on earth does that mean ?</h4>
+            <h6> Well you've come to the right place</h6>
+            <br>
+            <p> Here at <strong>SPORTING JARGONS</strong> we are building a glossary of sporting terms</p>
+            <p> Browse the categories to find out what that jargon means or even better <strong><a
+                        href="{{ url_for('register') }}" class="red-text">JOIN US </a></strong>and add your jargons to
+                the site as well</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 center-align login-btn">
+            <a href="{{ url_for('login') }}" class="waves-effect btn-small green darken-1 text-shadow">Log In</a>
+        </div>
+        <div class="col s12 center-align jargon-btn">
+            <a href="{{ url_for('get_jargons') }}" class="waves-effect btn-small green darken-1 text-shadow">View
+                Jargons</a>
         </div>
     </div>
 </div>
-    
 {% endblock %}
