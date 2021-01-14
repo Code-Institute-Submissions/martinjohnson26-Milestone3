@@ -66,14 +66,17 @@ Wireframes section
     
  ## Design and Website Features
 
-<!-- -   ### Initial Design
+-   ### Initial Design
 
-    The initial design was created in Balsamiq. A single page site was chosen containing four sections
+    A minimalistic simple design was chosen to enable users to focus on their primary reason for visiting the site
+    Images were initially chosen as backgrounds but it was later felt that this distracted the user and were subsequently
+    removed. 
 
 -   ### Colour scheme
 
-    Claret and White have been used as the prominent colours for fonts and backgrounds on navbars and footers as they
-    represent the club colours. A pale yellow has been used for hover effects again representing the clubs second choice
+    Shades of grey are the prominent colours for backgrounds on navbars, forms and backgrounds for the pages.
+    A black font was initail used but it was felt that this was too harsh against the greys and a dark red
+    was easier on the eye.A pale yellow has been used for hover effects again representing the clubs second choice
     colours. A light grey background was used to enhance the overall feel to the site.
 
     * Fonts,NavBar and footer backgrounds:  #b42424
@@ -114,7 +117,7 @@ Wireframes section
     * Add a search bar to the Map to enable users to search for specific needs in the vicinity of the stadiums (bars, food
      outlets etc).
     * Add a new section, possibly a blog page, that would allow users to add reviews and comments about their visit to
-     the stadiums. -->
+     the stadiums. 
 
 ##  Technologies used
 
