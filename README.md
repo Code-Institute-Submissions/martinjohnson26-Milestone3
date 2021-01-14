@@ -12,7 +12,9 @@ what these jargons mean. Site users will also have the option to add, edit and d
 
 ![mock ups on various devices.](static/readme_docs/mockup.png)
 
-[View the live project here.](https://milestone-three-project.herokuapp.com/) 
+[View the live project here.](https://milestone-three-project.herokuapp.com/
+
+) 
 
 ## User Experience (UX)
 
