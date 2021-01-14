@@ -126,48 +126,32 @@ Wireframes section
 * [FontAwesome](https://fontawesome.com) -  For icon images.
 * [Google Fonts](https://fonts.google.com) - For the fonts. 
 
-
-## Tools Used
-<!-- 
-* [Balsamiq](https://balsamiq.com/) - Used to create the wireframes on varying screen sizes.
-* [W3C HTML Validator](https://validator.w3.org/) - Check the validity of HTML code.
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Check the validity of CSS code.
-* [Autoprefixed](https://autoprefixer.github.io/) - Check the prefixes of CSS code.
-* [BeautifyTools](http://beautifytools.com/javascript-validator.php)- Check the validity of JavaScript code. -->
-
 ## Webpage and Code Testing
 
 W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 online Services were used to validate the code used and ensure
 there were no syntax errors in the project. Webpages were individually tested to ensure they responded to the code as expected
 
-* [Full testing Result](static/readme_docs/test_log.pdf)
-
 ### User story testing -  All test were manually conducted
 
- <!-- 1. As a user, I want to be able to see fixtures dates and kick off times
+ 1. As a user, I want to be able to find sporting jargons and what they mean
 
-    Users are presented an easily readable navigation bar which directs them to the section containing fixture details.
-    Users are presented with a clear layout of teams with a button which they can click on to reveal fixture information.
-    All functions in this section have been tested and full testing details are available in the test log 
-    
- 2. As a user, i want to see details of the stadiums that I am going to and details about the other teams in my league.
-    
-    Users are presented an easily readable navigation bar which directs them to the section containing stadium information.
-    They are prompted to click on markers to reveal further information via an info window. All functions in this section
-     have been tested and full testing details are available in the test log.
+    Users are presented with a simple navigation bar which directs them to the section containing jargons. This can also
+    be accessed via a button on the Home Page
+    Users are presented with an alphabetic index for sports where they click on and view jargons.
+       
+ 2. As a user, i want to add my sporting jargons and descriptions
 
- 3.  As a user, I want to be able to get directions to the stadiums.
+    Users are invited to join the site from the home page or can register via the NavBar. Once registered the user has
+    the functionality to add their jargons via a form which has validation controls in place to ensure entries are completed
+    correctly before being added to the site
 
-     Each info window contains a directions link to the stadium. All functions in this section have been tested and full
-     testing details are available in the test log.
+ 3.  As a user, I want to edit my sporting jargons and descriptions
 
- 4. As a user, I want to be able to contact the site owner and ask for more information.
+     As a registered user, they can edit and/or delete ant jargon that they have created . Edits are performed by an
+     edit form has validation controls in place to ensure entries are completed correctly before being updated on 
+     the site.
 
-    Users are presented an easily readable navigation bar which directs them to the section containing the contact form.
-    There is a simple contact form which prompts the user to complete the fields correctly. All functions in this section
-    have been tested and full testing details are available in the test log.
-
-    [The full test log can be viewed here](assets/readme_docs/testlog.pdf) -->
+    [Full testing Result](static/readme_docs/test_log.pdf)
 
 ## Bugs
 
