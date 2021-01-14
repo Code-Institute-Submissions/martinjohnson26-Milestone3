@@ -112,17 +112,19 @@ Wireframes section
 
 ##  Technologies used
 
-<!-- * [HTML](https://html.com/) - For the basic site code.
+* [HTML](https://html.com/) - For the basic site code.
 * [CSS](https://www.w3schools.com/css/) - For Styling.
-* [Bootstrap](https://getbootstrap.com/) - For additional styling, responsiveness and layouts.
-* [Google Maps API](https://developers.google.com/maps/documentation) - For the Google Map.
-* [EmailJS](https://www.emailjs.com/) - For the contact form.
-* [JavaScript](https://www.javascript.com/) - For the coding relating to the map and fixtures sections.
-* [JavaQuery](https://jquery.com/) -  For the coding relating to the map and fixtures sections.
+* [Materialize](https://materializecss.com/) - For additional styling, responsiveness and layouts.
+* [JQuery](https://jquery.com/) -  For the coding relating to the Materialize form templates used.
+* [Python](https://www.python.org/) to run the application
 * [GitHub](https://github.com/) -  For version control and committing to GitHub.
 * [GitPod](https://www.gitpod.io/) - For the repository to store the pushed code.
+* [Flask](https://flask.palletsprojects.com/)To create the framework
+* [Jinja](https://jinja.palletsprojects.com/) As the templating language 
+* [MongoDB](https://www.mongodb.com/) To host databases
+* [Heroku](https://www.heroku.com/) To Host the project
 * [FontAwesome](https://fontawesome.com) -  For icon images.
-* [Google Fonts](https://fonts.google.com) - For the fonts. -->
+* [Google Fonts](https://fonts.google.com) - For the fonts. 
 
 
 ## Tools Used
@@ -169,11 +171,11 @@ there were no syntax errors in the project. Webpages were individually tested to
 
 ## Bugs
 
-    There is an issue with the search box on the jargons page . The search is fuctional , however if a searched word
-     is found within the database, the search result is returned in each of the dropdown sections rather than the 
-     specific category the word belongs to. A decision was made to leave in the search function to demonstrate that 
-     the function worked but required further refinements to function as expected. Project submission deadlines
-     have meant that this has not been completed prior to submission.
+There is an issue with the search box on the jargons page . The search is fuctional , however if a searched word
+is found within the database, the search result is returned in each of the dropdown sections rather than the 
+specific category the word belongs to. A decision was made to leave in the search function to demonstrate that 
+the function worked but required further refinements to function as expected. Project submission deadlines
+have meant that this has not been completed prior to submission.
 
 ## Deployment
 
