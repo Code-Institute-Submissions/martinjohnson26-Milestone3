@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Sporting Jargons</title>
+    <title>Jargon Buster</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <div class="navbar-fixed">
         <nav class="nav-extended text-shadow grey darken-3">
             <div class="nav-wrapper">
-                <a href="{{ url_for ('home')}}" class="brand-logo white-text text-darken 4">Sporting Jargons</a>
+                <a href="{{ url_for ('home')}}" class="brand-logo white-text text-darken 4">Jargon Buster</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -41,8 +41,7 @@
     <!-- Mobile NavBar -->
     <ul class="sidenav" id="mobile-demo">
         <li>
-            <a href="{{ url_for ('home')}}" class="brand-logo brand-logo-size white-text text-darken 4">Sporting
-                Jargons</a>
+            <a href="{{ url_for ('home')}}" class="brand-logo brand-logo-size white-text text-darken 4">Jargon Buster</a>
         </li>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('get_jargons')}}">Jargons</a></li>

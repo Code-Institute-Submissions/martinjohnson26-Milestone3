@@ -2,7 +2,7 @@
 
 ## Data Centric Development by Martin Johnson
 
-Sporting Jargons is a website designed and built by Martin Johnson using knowledge
+Jargon Buster is a website designed and built by Martin Johnson using knowledge
 learnt on the Code Institute Full Stack Developers Course Modules 1- 10 which include HTML, CSS, JavaScript
 and Python
 
@@ -24,9 +24,7 @@ sporting jargons.
  - As a user, I want to be able to find sporting jargons and what they mean
  - As a user, i want to add my sporting jargons and descriptions
  - As a user, I want to edit my sporting jargons and descriptions
- - As a user, I want to be able to contact the site owner and ask for more information
  
-
  - As site owner, I want to build a database of sporting jargons and descriptions
  - As site owner, I want to site users to register with the site and add there own sporting jargons and descriptions
  - As site owner, I want to have full control of the content of the database
@@ -35,9 +33,7 @@ sporting jargons.
 
  Based on user requirements, I used [Balsamiq](https://balsamiq.com/) to create basic site layout templates for desktop,
  tablet and mobile devices. The design consists of 3 sections, a home page, a jargons section, and a 
- sports category section. I decided to use a JQuery toggle function to show and hide the fixtures as selected by the user. A gallery 
- page was consider but deemed not relevant at the design inception and with this in mind a single page website was
- decided upon.
+ sports category section.
 
  Initial Home page design layouts are displayed below. [Full wireframes can be viewed here](static/readme_docs/wireframes/wireframes.pdf)
 
@@ -143,13 +139,12 @@ Wireframes section
 * [Autoprefixed](https://autoprefixer.github.io/) - Check the prefixes of CSS code.
 * [BeautifyTools](http://beautifytools.com/javascript-validator.php)- Check the validity of JavaScript code. -->
 
-## Testing
-<!-- 
-W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
+## Webpage and Code Testing
 
-* [W3C HTML Validator -  Results](assets/readme_docs/htmlValidate.png.pdf)
+W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 online Services were used to validate the code used and ensure
+there were no syntax errors in the project. Webpages were individually tested to ensure they responded to the code as expected
 
-* [W3C CSS Validator * Results](assets/readme_docs/cssValidate.png) -->
+* [Full testing Result](static/readme_docs/test_log.pdf)
 
 ### User story testing -  All test were manually conducted
 
