@@ -75,48 +75,39 @@ Wireframes section
 -   ### Colour scheme
 
     Shades of grey are the prominent colours for backgrounds on navbars, forms and backgrounds for the pages.
-    A black font was initail used but it was felt that this was too harsh against the greys and a dark red
-    was easier on the eye.A pale yellow has been used for hover effects again representing the clubs second choice
-    colours. A light grey background was used to enhance the overall feel to the site.
+    A black font was initially used but it was felt that this was too harsh against the greys and a dark red
+    was easier on the eye. A white text against the grey backgrounds was choosen for the dropdown accordion.
+    A light grey background was used to enhance the overall feel to the site.
 
-    * Fonts,NavBar and footer backgrounds:  #b42424
-    * Fixture Section Fonts: #000000
-    * Hover effects: #E1F85E
+    * Fonts:#e62851
+    * NavBar background:  #b42424
+    * Accordion background: #616161
+    * Accordion text: #ffffff
     * Body: #eaeae1
 
 -   ### Typography
 
-    Ubuntu was the chosen font for its clear and easily readable text and strong characters when used with a bold font.
+    Roboto was the chosen font for its clear and easily readable text and strong characters.
     Sans Serif has been selected as the fall back text should the main font fail to import correctly for any reason.
-
--   ### Images
-
-    An image of the team celebrating their promotion success at Wembley has been chosen for the landing page, with a opacity
-    added to enable the text to be more visible.
 
 -   ### Site Features
 
     * Navigation: Permits the user to navigate to all sections of the site in a simply manner and return to the Home page
-    from anywhere on the page by selecting the Home menu or by selecting the NavBar brand name or logo.
+    from anywhere on the page by selecting the Home menu or by selecting the NavBar brand name.
 
-    * Fixtures Section: Opponents are listed alphabetically in sequence. Each club has a 'Show Fixtures' button which when
-     selected reveals fixture dates , kick off times and stadiums. The background for each club is based on the clubs
-     traditional colours. The fixtures can be hidden after viewing by clicking on the 'Hide Fixtures" button.
+    * Jargons: Displays an accordion style dropdown of sports sorted alphabetical. When clicked on sporting jargons are
+     revealed. Depending on access levels users can edit and delete the jargons. Full details are in the [test log](static/readme_docs/test_log.pdf)
 
-    * Google Maps API: Using a Google Map API the Twenty Four teams in the league have been coded to display a location
-     marker. Users can scroll in and out of the map and select a marker. The marker will display an info window displaying
-     an image of the stadium. Within the info window are two links. One links to the clubs official website and the other
-     open a google maps directions window.
+    * Add Jargon: Permits the user to add there own jargons.
 
-    * Contact Form: A simple contact form is used to enable the user to contact the site owner via e-mail.
+    * Profile: Displays the users profile name
 
     * Social Media: Links to usual social media sites are included in the footer section.
 
     ### Future Implementations
 
-    * Add a search bar to the Map to enable users to search for specific needs in the vicinity of the stadiums (bars, food
-     outlets etc).
-    * Add a new section, possibly a blog page, that would allow users to add reviews and comments about their visit to
+    * Enhance the profile page to allow the user to provide more details about themselves and their interests.
+    * Add a contact form to enable users to contact site owner.
      the stadiums. 
 
 ##  Technologies used
@@ -175,6 +166,14 @@ there were no syntax errors in the project. Webpages were individually tested to
     have been tested and full testing details are available in the test log.
 
     [The full test log can be viewed here](assets/readme_docs/testlog.pdf) -->
+
+## Bugs
+
+    There is an issue with the search box on the jargons page . The search is fuctional , however if a searched word
+     is found within the database, the search result is returned in each of the dropdown sections rather than the 
+     specific category the word belongs to. A decision was made to leave in the search function to demonstrate that 
+     the function worked but required further refinements to function as expected. Project submission deadlines
+     have meant that this has not been completed prior to submission.
 
 ## Deployment
 
