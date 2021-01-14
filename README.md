@@ -62,13 +62,13 @@ Wireframes section
 
 ### Surface
 
-<!-- A team image with an opacity added to enable the text to be more visible is the landing page. -->
+A minimalistic design with easy to navigate Features
     
  ## Design and Website Features
 
 -   ### Initial Design
 
-    A minimalistic simple design was chosen to enable users to focus on their primary reason for visiting the site
+    A simple design was chosen to enable users to focus on their primary reason for visiting the site
     Images were initially chosen as backgrounds but it was later felt that this distracted the user and were subsequently
     removed. 
 
@@ -163,52 +163,37 @@ have meant that this has not been completed prior to submission.
 
 ## Deployment
 
-### GitHub Pages
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
-<!-- To deploy my site I used GitHub and the following steps:
-
-1. Logged into my GitHub account.
-1. Went to my repositories and selected my project.
-1. Clicked the Settings icon.
-1. Scrolled down the page to the 'GitHub Pages' section
-1. I selected 'Master branch' in the dropdown
-1. This deployed my project to the URL: https://martinjohnson26.github.io/Milestone2-Project/ -->
-
-### Forking the repository
-
-<!-- 1.  Log in to GitHub and locate the GitHub Repository
-1.  At the top of the Repository above the "Settings" Button on the menu, locate the "Fork" Button.
-1.  Click the button to create a copy of the original repository in your GitHub account. -->
+1. Go to the Heroku Dashboard and create a New App with the region set to Europe.
+1. In the Settings tab of your app click Reveal Config Vars.
+1. Enter the environment variables, IP, PORT and MONGO_URI.
+1. In the IDE create an env.py file which contains the MONGO_URI. Add this file to the .gitignore file
+1. In the IDE create a requirements.txt using the command pip freeze -local > requirements.txt
+1. In the IDE create a Procile by using the command echo web: python app.py > Procfile
+1. Go to the Deploy tab and select Heroku Git.
+1. In the IDE use the command git push heroku master.
 
 ### Make a local clone
-<!-- 
+
 1. Log in to GitHub and locate the GitHub Repository
 1. Under the repository name, click "Clone or download".
 1. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-1. Open Git Bash
 1. Change the current working directory to the location where you want the cloned directory to be made.
 1. Type git clone, and then paste the URL you copied in Step 3.
-1. Press Enter. Your local clone will be created. -->
+1. Press Enter. Your local clone will be created. 
 
 ## Credits
 
 **Content:** 
-<!-- The core HTML, CSS and JS code has been written by myself. Templates taken from [Bootstrapbay](https://bootstrapbay.com/blog/14-days-bootstrap-4/)
-were used for the NavBar and fixtures section and modified by myself to meet the needs of the site. The email.JS code was taken from the 
-Code Institute Interactive Frontend Development module lessons. The core code for the Google Maps API was taken from following
-a YouTube video by [Traversy Media](https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=1445s) and modifying to meet site requirements.
-Bootstrap 4 was used to assist with site responsivness and layout -->
-
-**Media**  
- <!-- Icons were sourced from FontAwesome  (https://fontawesome.com)
-
- Images were sourced from Wikipediae (https://en.wikipedia.org)
-
- Fonts were sourced from Google Fonts (https://fonts.google.com/) -->
+The core HTML, CSS, Python and JS code has been written by myself. Templates taken from [Materialize](https://materializecss.com)
+were used for the NavBar, datepicker and the add/edit forms and modified by myself to meet the needs of the site.
 
 **Acknowledgements**
 
-<!-- https://www.w3schools.com/bootstrap4/ For use of built in class definitions, examples and Try Me Code snippets
+https://materializecss.com For use of built in templates
+
+Tim Nelson for the additional code for relating to the form verification
 
 Slack community for support and advice during the construction of the site
 
@@ -216,10 +201,5 @@ Code Institute tutors for support and advice during the construction of the site
 
 Code Institute coursework for reference
 
-Traversy Media for YouTube videos related to Google Maps API's
 
-Codecademy for additional tutorials relating to JavaScript
-
-Oluwafemi Medale (CI Mentor) for help, support, advice and positive feedback from the initial inception of the site through to completion
- -->
 
