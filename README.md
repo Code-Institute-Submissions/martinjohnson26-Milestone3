@@ -10,9 +10,9 @@ The purpose of the site is to provide users with explanations for commonly used 
 what these jargons mean. Site users will also have the option to add, edit and delete jargons that they have heard and used themselves.
 
 
-![mock ups on various devices.](assets/readme_docs/mockup.png)
+![mock ups on various devices.](static/readme_docs/mockup.png)
 
-[View the live project here.](https://martinjohnson26.github.io/Milestone2-Project/) 
+[View the live project here.](https://milestone-three-project.herokuapp.com/) 
 
 ## User Experience (UX)
 
